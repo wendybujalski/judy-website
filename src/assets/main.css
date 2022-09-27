@@ -15,3 +15,31 @@ body {
     line-height: 1.7em;
     color: black;
 }
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #dd0, 0 0 40px #cc0, 0 0 50px #cc0;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0, 0 0 50px #ff0, 0 0 60px #ff0;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(-2deg);
+    }
+
+    66% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(2deg);
+    }
+}
