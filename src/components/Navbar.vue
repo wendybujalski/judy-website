@@ -2,10 +2,10 @@
     <nav id="navbar">
         <NavbarHeader :active="$route.name === 'home'" />
         <ul>
-            <NavbarLinkBase link="paintings">Paintings</NavbarLinkBase>
-            <NavbarLinkBase link="video">Video/Performance</NavbarLinkBase>
+            <NavbarLinkBase :active="$route.name === 'painting'" link="painting">Paintings</NavbarLinkBase>
+            <NavbarLinkBase :active="$route.name === 'video'" link="video">Video/Performance</NavbarLinkBase>
             <NavbarLinkBase :active="$route.name === 'bio'" link="bio">Bio/CV</NavbarLinkBase>
-            <NavbarLinkBase link="contact">Contact</NavbarLinkBase>
+            <NavbarLinkBase :active="$route.name === 'contact'" link="contact">Contact</NavbarLinkBase>
         </ul>
     </nav>
 </template>

@@ -13,11 +13,11 @@
 }
 
 .navbar-header:hover * {
-    animation: glow 1s ease-in-out infinite alternate, wobble 2s linear infinite alternate;
+    animation: glow_pink 1s ease-in-out infinite alternate, wobble 2s linear infinite alternate;
 }
 
 .animate {
-    animation: glow 1s ease-in-out infinite alternate, wobble 2s linear infinite alternate
+    animation: glow_pink 1s ease-in-out infinite alternate, wobble 2s linear infinite alternate
 }
 </style>
 

@@ -29,12 +29,12 @@ const classes = computed(() => {
 .navlink:hover {
     font-size: 1.4rem;
     font-weight: 900;
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow_yellow 1s ease-in-out infinite alternate;
 }
 
 .animation {
     font-size: 1.4rem;
     font-weight: 900;
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow_yellow 1s ease-in-out infinite alternate;
 }
 </style>
