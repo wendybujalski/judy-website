@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Tangerine:wght@700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +15,16 @@ body {
     font-weight: 300;
     line-height: 1.7em;
     color: black;
+}
+
+@keyframes icon-shadow {
+    from {
+        filter: drop-shadow(0 0 10px #ff0) drop-shadow(0 0 20px #ff0) drop-shadow(0 0 30px #dd0) drop-shadow(0 0 40px #cc0) drop-shadow(0 0 50px #cc0);
+    }
+
+    to {
+        filter: drop-shadow(0 0 20px #ff0) drop-shadow(0 0 30px #ff0) drop-shadow(0 0 40px #ff0) drop-shadow(0 0 50px #ff0) drop-shadow(0 0 60px #ff0);
+    }
 }
 
 @keyframes glow_yellow {
@@ -51,5 +62,183 @@ body {
 
     100% {
         transform: rotate(2deg);
+    }
+}
+
+@keyframes wobblemore {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(-5deg);
+    }
+
+    66% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rainbow {
+
+    0%,
+    100% {
+        color: red;
+    }
+
+    15% {
+        color: #ff8800;
+    }
+
+    20% {
+        color: yellow;
+    }
+
+    30% {
+        color: #00ff00;
+    }
+
+    40% {
+        color: green
+    }
+
+    50% {
+        color: cyan;
+    }
+
+    60% {
+        color: lightblue;
+    }
+
+    70% {
+        color: blue;
+    }
+
+    80% {
+        color: purple;
+    }
+
+    90% {
+        color: magenta;
+    }
+}
+
+@keyframes distort1 {
+    0% {
+        top: 49.5%;
+        left: 49.5%;
+    }
+
+    12.5% {
+        top: 49.5%;
+        left: 50%;
+    }
+
+    25% {
+        top: 49.5%;
+        left: 50.5%;
+    }
+
+    37.5% {
+        top: 50%;
+        left: 50.5%;
+    }
+
+    50% {
+        top: 50.5%;
+        left: 50.5%;
+    }
+
+    62.5% {
+        top: 50.5%;
+        left: 50%;
+    }
+
+    75% {
+        top: 50.5%;
+        left: 49.5%;
+    }
+
+    87.5% {
+        top: 50%;
+        left: 49.5%;
+    }
+
+    100% {
+        top: 49.5%;
+        left: 49.5%;
+    }
+}
+
+@keyframes distort2 {
+    0% {
+        top: 51%;
+        left: 51%;
+    }
+
+    12.5% {
+        top: 50%;
+        left: 51%;
+    }
+
+    25% {
+        top: 49%;
+        left: 51%;
+    }
+
+    37.5% {
+        top: 49%;
+        left: 50%;
+    }
+
+    50% {
+        top: 49%;
+        left: 49%;
+    }
+
+    62.5% {
+        top: 50%;
+        left: 49%;
+    }
+
+    75% {
+        top: 51%;
+        left: 49%;
+    }
+
+    87.5% {
+        top: 51%;
+        left: 50%;
+    }
+
+    100% {
+        top: 51%;
+        left: 51%;
     }
 }

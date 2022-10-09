@@ -1,35 +1,70 @@
 <template>
-    <div class="p-4">
+    <div class="p-8">
         <p class="text-justify text-xl font-medium">
-            <span class="font-black">Judy Giera</span> <span class="italic">(she/her)</span> is a Brooklyn based artist
-            whose
-            work elevates transgender joy
-            while examining the transmisogyny and psychological stakes that define surviving as a transgender woman in
-            America today. Moving
-            broadly across painting, video, and performance with a sense of humor and weirdness, Judy's practice
-            prioritizes
-            and elevates her non-cisgender experience of womanhood. She holds an MFA in Art-Painting (Lehman
-            College-City
-            University of New York), an MFA in Theatre (The Actors Studio Drama School at Pace University) and she spent
-            a
-            year in the graduate Performance + Performance Studies program at Pratt Institute. Her work has been seen in
-            both solo and group exhibitions at venues including the Hudson River Museum, SPANTZO, Ceres Gallery, Amos
-            Eno
-            Gallery, Gallery Aferro, White Columns (Online), and Bronx Arts Space, Trestle Gallery among others. Her
-            evening
-            length performance with soundscape, 'Blanche On A Winter's Eve' premiered at the 2016 United Solo Theatre
-            Festival, garnering an award from festival organizers, and was curated into the First International Human
-            Rights
-            Arts Festival in 2017. Giera's work has been featured in Vellum Magazine, Art511, and Artspiel and she is a
-            2022
-            AIM Fellow with the Bronx Museum of the Arts. Recently, Judy joined the staff of the Leslie-Lohman Museum of
-            Art, the only dedicated LGBTQ+ art museum in the world, as their Collections Manager. Giera resides in
-            Brooklyn
-            with her partner, two cats, and an unnecessary amount of house plants.
+            <span class="font-black judy womanhood">Judy Giera</span> <span class="italic">(she/her)</span>
+            is a <a href="https://goo.gl/maps/1wbDZFEQ8ZkDK8ei9" class="hoverbold" target="_blank">Brooklyn</a>
+            based artist whose work elevates
+            <span class="joy">transgender joy</span> while examining the
+            <a href="https://en.wikipedia.org/wiki/Transmisogyny" class="transmisogyny"
+                target="_blank">transmisogyny</a>
+            and psychological stakes that define surviving as a
+            <a href="https://en.wikipedia.org/wiki/Transgender" class="joy" target="_blank">transgender woman</a> in
+            <span class="america">America</span> today. Moving broadly across
+            <router-link to="/painting" class="joy">painting</router-link>,
+            <router-link to="/video" class="joy">video</router-link>,
+            and <router-link to="/video" class="joy">performance</router-link>
+            with a sense of <span class="humor hoverbold">humor</span> and
+            <span class="weird hoverbold" @click="weird" ref="weirdness">weirdness</span>,
+            Judy's practice prioritizes and elevates her
+            <a href="https://en.wikipedia.org/wiki/Transgender" class="joy" target="_blank">non-cisgender</a>
+            experience of <span class="womanhood">womanhood</span>. She holds an
+            <a href="https://www.lehman.edu/academics/arts-humanities/art/index.php" target="_blank"
+                class="hoverbold">MFA in Art-Painting (Lehman College-City University of New York)</a>, an
+            <a href="https://www.pace.edu/dyson/departments/actors-studio-drama-school" target="_blank"
+                class="hoverbold">MFA in Theatre (The Actors Studio Drama School at Pace University)</a>
+            and she spent a year in the graduate
+            <a href="https://www.pratt.edu/programs/mfa-performance-and-performance-studies/" target="_blank"
+                class="hoverbold">Performance + Performance Studies program at Pratt
+                Institute.</a>
+            Her work has been seen in both solo and group exhibitions at venues including the
+            <a href="https://www.hrm.org/" target="_blank" class="hoverbold">Hudson River Museum</a>,
+            <a href="https://www.spantzo.com/" target="_blank" class="hoverbold">SPANTZO</a>,
+            <a href="https://ceresgallery.org/" target="_blank" class="hoverbold">Ceres Gallery</a>,
+            <a href="https://www.amoseno.org/" target="_blank" class="hoverbold">Amos Eno Gallery</a>,
+            <a href="https://aferro.org/" target="_blank" class="hoverbold">Gallery Aferro</a>,
+            <a href="https://whitecolumns.org/" target="_blank" class="hoverbold">White Columns (Online)</a>, and
+            <a href="http://www.bronxartspace.com/" target="_blank" class="hoverbold">BronxArtSpace, Trestle
+                Gallery</a>
+            among others. Her evening length performance with soundscape,
+            <span class="hoverglow">'Blanche On A Winter's Eve'</span> premiered at the
+            <a href="https://unitedsolo.org/the-2016-united-solo-awards-have-been-announced/" target="_blank"
+                class="hoverbold">United Solo Theatre Festival</a>,
+            garnering an award from festival organizers, and was curated into the
+            <a href="http://dixonplace.org/performances/a-queer-christmas-delusion/" target="_blank"
+                class="hoverbold">First International Human Rights Arts Festival in 2017</a>.
+            Giera's work has been featured in
+            <a href="http://www.vellumartzine.com/" target="_blank" class="hoverbold">Vellum Magazine</a>,
+            <a href="http://art511mag.com/" target="_blank" class="hoverbold">Art511</a>, and
+            <a href="https://artspiel.org/" target="_blank" class="hoverbold">Art Spiel</a>
+            and she is a
+            <a href="https://www.bronxmuseum.org/aim/" target="_blank" class="hoverbold">2022 AIM Fellow</a>
+            with the
+            <a href="https://www.bronxmuseum.org/" target="_blank" class="hoverbold">Bronx Museum of the Arts</a>.
+            Recently, Judy joined the staff of the
+            <a href="https://www.leslielohman.org/" target="_blank" class="hoverbold">Leslie-Lohman Museum of Art</a>,
+            the only dedicated LGBTQ+ art museum in the world, as their
+            <a href="https://www.leslielohman.org/about-us#:~:text=Judy%20Giera%2C%20Collections%20Manager"
+                target="_blank" class="hoverbold">Collections
+                Manager</a>.
+            Giera resides in
+            <a href="https://goo.gl/maps/1wbDZFEQ8ZkDK8ei9" class="hoverbold" target="_blank">Brooklyn</a> with
+            <a href="https://wendywildsha.pe/" class="wendy hoverbold" target="_blank">her partner</a>,
+            <router-link to="/cats" class="cats hoverbold">two cats</router-link>,
+            and an unnecessary amount of <span class="plants">house plants</span>.
         </p>
     </div>
     <div class="w-full h-4 border-b border-gray-300"></div>
-    <div class="lg:w-5/6 w-11/12">
+    <div class="lg:w-5/6 w-11/12 pb-8">
         <CVLine bold top-space>Education</CVLine>
         <CVLine left-text="MFA Art">Lehman College/City University of New York</CVLine>
         <CVLine left-text="MFA Theatre">Actors Studio Drama School at Pace University</CVLine>
@@ -93,5 +128,134 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import CVLine from "../components/CVLine.vue";
+
+const weirdness = ref();
+const weird = () => {
+    weirdness.value.innerText += "s";
+};
 </script>
+
+<style scoped>
+.hoverbold:hover {
+    font-weight: bold;
+    letter-spacing: -0.018em;
+}
+
+.hoverglow:hover {
+    animation: glow_pink 1s ease-in-out infinite alternate;
+}
+
+.judy {
+    font-family: 'Delius Unicase', cursive;
+}
+
+.joy {
+    position: relative;
+    cursor: pointer;
+}
+
+.joy:hover {
+    animation: rainbow 1s infinite alternate, glow_yellow 1s ease-in-out infinite alternate;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.transmisogyny {
+    position: relative;
+}
+
+.transmisogyny::before,
+.transmisogyny::after {
+    position: absolute;
+    content: 'transmisogyny';
+    z-index: -1;
+    display: none;
+}
+
+.transmisogyny:hover::before {
+    transform: translate(-50%, -50%) scale(1.03);
+    color: red;
+    animation: distort1 0.2s step-end infinite;
+    display: inline;
+}
+
+.transmisogyny:hover::after {
+    transform: translate(-50%, -50%);
+    color: black;
+    animation: distort2 0.2s step-end infinite;
+    display: inline;
+}
+
+.weird {
+    cursor: pointer;
+}
+
+.humor:hover {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+.womanhood:hover {
+    color: magenta;
+    animation: glow_yellow 1s ease-in-out infinite alternate;
+    display: inline-block;
+    transform: scale(1.05);
+}
+
+.plants:hover::before {
+    content: "🌱"
+}
+
+.plants:hover::after {
+    content: "🌵"
+}
+
+.wendy {
+    position: relative;
+    white-space: nowrap;
+}
+
+.wendy:hover {
+    animation: rainbow 1s infinite alternate;
+}
+
+.wendy::before,
+.wendy::after {
+    position: absolute;
+    content: 'her partner';
+    z-index: -1;
+    display: none;
+}
+
+.wendy:hover::before {
+    transform: translate(-50%, -50%) scale(1.03);
+    color: magenta;
+    animation: distort1 0.2s step-end infinite;
+    display: inline;
+}
+
+.wendy:hover::after {
+    transform: translate(-50%, -50%);
+    color: cyan;
+    animation: distort2 0.2s step-end infinite;
+    display: inline;
+}
+
+.cats:hover::before,
+.cats:hover::after {
+    width: 1rem;
+    height: 1rem;
+    display: inline;
+}
+
+.cats:hover::before {
+    content: "😸";
+}
+
+.cats:hover::after {
+    content: "😻";
+    transform: rotate(180deg);
+}
+</style>
