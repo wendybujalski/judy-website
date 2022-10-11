@@ -1,5 +1,4 @@
 import { createApp } from "vue";
-import { createPinia } from "pinia";
 import naive from "naive-ui";
 
 import App from "./App.vue";
@@ -15,7 +14,6 @@ export const WENDY_URL = "https://www.wendywildsha.pe/";
 const app = createApp(App);
 
 app.use(naive);
-app.use(createPinia());
 app.use(router);
 
 app.mount("#app");

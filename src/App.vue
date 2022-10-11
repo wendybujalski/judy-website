@@ -16,11 +16,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "@vue/reactivity";
-import { RouterView, useRouter } from "vue-router";
+import { RouterView } from "vue-router";
 import Navbar from "./components/Navbar.vue";
-
-const router = useRouter();
 </script>
 
 <style scoped>

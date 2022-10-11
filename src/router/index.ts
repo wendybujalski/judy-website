@@ -1,10 +1,10 @@
-import BioCvView from "@/views/BioCvView.vue";
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import PaintingView from "../views/PaintingView.vue";
-import VideoView from "../views/VideoView.vue";
-import ContactView from "../views/ContactView.vue";
-import CatsView from "../views/CatsView.vue";
+import HomeView from "@/views/HomeView.vue";
+import BioCvView from "@/views/BioCvView.vue";
+import PaintingView from "@/views/PaintingView.vue";
+import VideoView from "@/views/VideoView.vue";
+import ContactView from "@/views/ContactView.vue";
+import CatsView from "@/views/CatsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

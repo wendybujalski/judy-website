@@ -18,6 +18,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { NImage, NModal } from 'naive-ui';
 
 const props = defineProps({
     thumb: { type: String, required: true },
@@ -29,8 +30,12 @@ const props = defineProps({
     notPainting: { type: Boolean, default: false },
 })
 
-const imgUrl = new URL(`/src/assets/${props.notPainting ? "" : "paintings/"}${props.src}`, import.meta.url).href;
-const thumbUrl = new URL(`/src/assets/${props.notPainting ? "" : "paintings/"}${props.thumb}`, import.meta.url).href;
+// const imgUrl = new URL(`/@src-assets/${(props.notPainting ? "" : "paintings/")}${props.src}`, import.meta.url).href;
+// const thumbUrl = new URL(`/@src-assets/${(props.notPainting ? "" : "paintings/")}${props.thumb}`, import.meta.url).href;
+
+// TODO - figure out build tools for this part
+const imgUrl = `/assets/${(props.notPainting ? "" : "paintings/")}${props.src}`;
+const thumbUrl = `/assets/${(props.notPainting ? "" : "paintings/")}${props.thumb}`;
 
 const showModal = ref(false);
 </script>

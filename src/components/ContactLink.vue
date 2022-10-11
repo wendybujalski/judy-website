@@ -28,6 +28,7 @@ const copyLink = () => {
     navigator.clipboard.writeText(props.linkText);
 };
 
+// TODO - figure out build tools for this part
 const decoratorUrl = new URL(`/src/assets/${props.decorator}`, import.meta.url).href;
 
 const classes = computed(() => {
